@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>EC Dragon Test</title>
+<title>PHP Levenshtein</title>
 </head>
 <body>
 <pre>
@@ -12,14 +12,14 @@ require_once($include_dir . 'lib/levenshtein.php');
 $test = array(
 	array('abc', 'abc'), //0
 	array('kitten', 'sitting'), //3
-	array('おしり', 'めがね'), //5
-	array('照明', '明'), //
-	array('いじめ', 'いじり'), //
-	array('もずくのかに', 'かに'), //
-	array('火事', '花火'), //
-	array('火事', '黒板'), //
 	array('smei', 'mei'), //
 	array('12345', '234'),
+	array('おしり', 'めがね'), //5
+	array('照明', '照明'), //
+	array('いじめ', 'いじり'), //
+	array('もずくのかに', 'かに'), //
+	array('CDショップ', 'Cショック'), //
+	array('火事', '花火'), //
 );
 foreach ($test as $row) {
 	echo '<hr>';
