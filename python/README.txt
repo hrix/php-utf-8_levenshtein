@@ -14,4 +14,4 @@ PHPでは、levenshteinという組込の関数があるのですが、日本語
 http://s1100.blogspot.com/2009/03/levensteinphp_24.html
 http://github.com/S1100/php-utf-8_levenshtein/tree/master
 
-Python日本語はさんでも行けますね。
+Python日本語はさんでもいけますね。
