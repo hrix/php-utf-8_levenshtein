@@ -1,11 +1,3 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>EC Dragon Test</title>
-</head>
-<body>
-<pre>
 <?php
 /**
  * マルチバイト文字列、英数字の混じった文字列を１文字ずつ配列に分割
@@ -64,31 +56,4 @@ function LevenshteinDistance($str1, $str2, $costReplace = 2, $encoding = 'UTF-8'
 	//return $d[$mb_len1][$mb_len2];
 	return array('distance' => $d[$mb_len1][$mb_len2], 'count_same_letter' => $count_same_letter);
 }
-
-$test = array(
-	array('abc', 'abc'), //0
-	array('kitten', 'sitting'), //3
-	array('おしり', 'めがね'), //5
-	array('照明', '明'), //
-	array('いじめ', 'いじり'), //
-	array('もずくのかに', 'かに'), //
-	array('火事', '花火'), //
-	array('火事', '黒板'), //
-	array('smei', 'mei'), //
-	array('12345', '234'),
-);
-foreach ($test as $row) {
-	echo $row[0].','.$row[1];
-	echo ' | ';
-	echo levenshtein($row[0], $row[1]);
-	echo ' = ';
-	var_dump(LevenshteinDistance($row[0], $row[1]));
-	echo '<br/>';
-}
-
-var_dump($test);
 ?>
-
-</pre>
-</body>
-</html>

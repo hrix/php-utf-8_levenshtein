@@ -7,25 +7,27 @@
 <body>
 <pre>
 <?php
+require_once($include_dir . 'lib/levenshtein.php');
 
 $test = array(
 	array('abc', 'abc'), //0
 	array('kitten', 'sitting'), //3
-	array('‚¨‚µ‚è', '‚ß‚ª‚Ë'), //5
-	array('Æ–¾', '–¾'), //
-	array('‚¢‚¶‚ß', '‚¢‚¶‚è'), //
-	array('‚à‚¸‚­‚Ì‚©‚É', '‚©‚É'), //
-	array('‰ÎŽ–', '‰Ô‰Î'), //
-	array('‰ÎŽ–', '•”Â'), //
+	array('ãŠã—ã‚Š', 'ã‚ãŒã­'), //5
+	array('ç…§æ˜Ž', 'æ˜Ž'), //
+	array('ã„ã˜ã‚', 'ã„ã˜ã‚Š'), //
+	array('ã‚‚ãšãã®ã‹ã«', 'ã‹ã«'), //
+	array('ç«äº‹', 'èŠ±ç«'), //
+	array('ç«äº‹', 'é»’æ¿'), //
 	array('smei', 'mei'), //
 	array('12345', '234'),
 );
 foreach ($test as $row) {
+	echo '<hr>';
 	echo $row[0].','.$row[1];
-	echo ' | ';
-	echo levenshtein($row[0], $row[1]);
-	echo ' = ';
-	var_dump(LevenshteinDistance($row[0], $row[1]));
+//	echo ' | ';
+//	echo levenshtein($row[0], $row[1]);
+//	echo ' = ';
+	var_dump(LevenshteinDistance($row[0], $row[1], 1, 'UTF-8'));
 	echo '<br/>';
 }
 
