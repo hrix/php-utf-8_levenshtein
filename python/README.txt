@@ -6,7 +6,9 @@ C:\Python26\python python/levenshtein.py PC Cいて
 C:\Python26\python python/levenshtein.py CDショップ Cショック
 
 ◇gitでコミットする
-git commit -m 'コメント'
+D:\www\github\php-utf-8_levenshteinで
+git add .
+git commit -m 'home'
 git push origin master
 
 ◇gitでcloneを作る
