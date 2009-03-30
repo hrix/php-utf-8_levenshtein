@@ -1,7 +1,7 @@
 ■PythonのDocTestを付けてみた
 
 ◇テストコードの実行
-D:\www\github\php-utf-8_levenshtein>C:\Python26\python python/levenshtein.py a -v
+D:\www\github\php-utf-8_levenshtein>C:\Python26\python python/levenshtein.py a b -v
 
 ◇Python コマンドラインからの実行
 >>> 
