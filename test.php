@@ -12,14 +12,14 @@ require_once($include_dir . 'lib/levenshtein.php');
 $test = array(
 	array('abc', 'abc'), //0
 	array('kitten', 'sitting'), //3
-	array('smei', 'mei'), //
-	array('12345', '234'),
-	array('おしり', 'めがね'), //5
-	array('照明', '照明'), //
-	array('いじめ', 'いじり'), //
-	array('もずくのかに', 'かに'), //
-	array('CDショップ', 'Cショック'), //
-	array('火事', '花火'), //
+	array('smei', 'mei'), //2
+	array('12345', '234'),//3
+	array('おしり', 'めがね'), //4
+	array('照明', '照明'), //0
+	array('いじめ', 'いじり'), //2
+	array('もずくのかに', 'かに'), //5
+	array('CDショップ', 'Cショック'), //2
+	array('火事', '花火'), //2
 );
 foreach ($test as $row) {
 	echo '<hr>';
