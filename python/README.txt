@@ -1,31 +1,7 @@
-◇gitのディレクトリに移動
-d:
-cd \www\github\php-utf-8_levenshtein
-◇Pythonの実行
-C:\Python26\python python/levenshtein.py PC Cいて
-C:\Python26\python python/levenshtein.py CDショップ Cショック
+■PythonのDocTestを試してみたい
 
 ◇Python コマンドライン
 >>> os.chdir('d:')
 >>> os.chdir('/www/github/php-utf-8_levenshtein/python/')
 import shutil,os, sys
 
-◇gitでコミットする
-D:\www\github\php-utf-8_levenshteinで
-git add .
-git commit -m 'home'
-git push origin master
-
-◇gitでcloneを作る
-D:\www\github>git clone git@github.com:S1100/php-utf-8_levenshtein.git
-
-
-Python日本語はさんでもいけますね。
-
-
-先日Kansai.pm#11に参加させて頂いたS1100です。
-「もしかして機能」がおもしろかったので、PHPですが簡単なものを作ろうとしています。
-
-PHPでは、levenshteinという組込の関数があるのですが、日本語では正しい距離が出ないので、作ってみました。
-http://s1100.blogspot.com/2009/03/levensteinphp_24.html
-http://github.com/S1100/php-utf-8_levenshtein/tree/master
