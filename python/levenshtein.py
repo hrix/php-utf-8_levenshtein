@@ -26,11 +26,7 @@ def levenshtein_distance(a , b):
         >>> levenshtein.levenshtein_distance('‰ÎŽ–', '‰Ô‰Î')
 	2
     """
-    import sys
-    
-    a = unicode(a, sys.stdin.encoding)
-    b = unicode(b, sys.stdin.encoding)
-    
+
     m = [ [0] * (len(b) + 1) for i in range(len(a) + 1) ]
 
     for i in xrange(len(a) + 1):
@@ -49,6 +45,13 @@ def levenshtein_distance(a , b):
     # print m
     return m[-1][-1]
 
+#import sys
+
+#s1 = sys.argv[1]
+#s2 = sys.argv[2]
+
+#print levenshtein_distance(s1, s2)
+#print levenshtein_distance(unicode(s1, sys.stdin.encoding), unicode(s2, sys.stdin.encoding))
 def _test():
     import doctest
     doctest.testmod()
