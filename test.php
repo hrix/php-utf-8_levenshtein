@@ -7,7 +7,7 @@
 <body>
 <pre>
 <?php
-require_once($include_dir . 'lib/levenshtein.php');
+require_once($include_dir . 'levenshtein.php');
 
 $test = array(
 	array('abc', 'abc'), //0
