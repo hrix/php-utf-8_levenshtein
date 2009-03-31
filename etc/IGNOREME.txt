@@ -11,6 +11,7 @@ D:\www\github\php-utf-8_levenshteinで
 git add .
 git commit -m 'home'
 git push origin master
+（更新する場合はpull）
 
 ◇gitでcloneを作る
 D:\www\github>git clone git@github.com:S1100/php-utf-8_levenshtein.git
