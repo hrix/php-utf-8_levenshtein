@@ -1,5 +1,6 @@
 PHP levenshtein for japanese UTF-8
 
-lib/levenshtein.php	本体	
+levenshtein.php	本体	
 test.php	テストコード 
 python/	勉強中のもの
+etc/	あんちょこ
