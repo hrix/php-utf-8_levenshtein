@@ -1,7 +1,7 @@
 ■PythonのDocTestを付けてみた
 
 ◇テストコードの実行
-D:\www\github\php-utf-8_levenshtein>C:\Python26\python python/levenshtein.py a b -v
+D:\www\github\php-utf-8_levenshtein>C:\Python25\python python/levenshtein.py a b -v
 ※Docプロンプトで確認しているため文字コードがcp932に。
 
 ◇Python コマンドラインからの実行
