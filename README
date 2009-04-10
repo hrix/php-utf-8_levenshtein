@@ -2,5 +2,5 @@ PHP levenshtein for japanese UTF-8
 
 levenshtein.php	本体	
 test.php	テストコード 
-python/	勉強中のもの
+python/	勉強中のもの（PythonのDoctestを試してみたかった。）
 etc/	あんちょこ
